@@ -8,6 +8,7 @@ namespace AaronFrancis\Flaky\Tests\Unit;
 
 use AaronFrancis\Flaky\Providers\FlakyServiceProvider;
 use AaronFrancis\Flaky\Tests\Support\FlakyTestServiceProvider;
+use Illuminate\Foundation\Application;
 use Orchestra\Testbench\TestCase;
 
 abstract class Base extends TestCase
@@ -15,7 +16,7 @@ abstract class Base extends TestCase
     /**
      * Define environment setup.
      *
-     * @param  \Illuminate\Foundation\Application  $app
+     * @param  Application  $app
      * @return void
      */
     protected function getEnvironmentSetup($app) {}

@@ -252,4 +252,4 @@ class BasicTest extends Base
     }
 }
 
-class SpecificException extends \Exception {}
+class SpecificException extends Exception {}
